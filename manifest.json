@@ -1,0 +1,20 @@
+{
+    "name": "IPL match",
+    "version": "0.1.0",
+    "description": " The IPL Chrome Extension: Stay updated on live scores, match schedules, player stats, and news from IPL, all within your Chrome browser.",
+    "action": {
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        },
+        "default_title": "IPL match",
+        "default_popup": "popup.html"
+    },
+   
+  
+    "background": {
+        "service_worker": "background.js"
+    },
+    "manifest_version": 3
+}
