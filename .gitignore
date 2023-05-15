@@ -1,3 +1,5 @@
-*.env
+.env
 
 # ignore the .env file which contains the credentials
+
+*.txt

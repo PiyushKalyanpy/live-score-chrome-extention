@@ -3,123 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
     <!-- outer div -->
-    <div class="bg-slate-100 p-4 w-[500px]">
+    <div class="my-alert">
       <!-- inner card  -->
-      <div class="bg-white rounded-3xl p-4 space-y-8">
-
+      <div>
         <!-- head div -->
-        <div class="flex flex-row items-center gap-4">
+        <div class="ipl_element1">
           <!-- logo -->
           <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/cricket-4069153-3364091@0.png"
+            src="assets/icon128.png"
             alt="logo"
             width="40"
             height="40"
           />
           <!-- title -->
-          <h2 class="text-sm text-center">
-            Chennai Super Kings vs Kolkata Knight Riders, 61st Match
-          </h2>
+          <h2 id="headline">😜</h2>
           <!-- status of match -->
-          <div
-            class="w-3 h-3 bg-green-500 rounded-full shadow-md shadow-green-100"
-          ></div>
+          <div class="ipl_element3" id="match_status"></div>
         </div>
 
-
         <!-- team information -->
-        <div class="flex flex-row gap-4 items-center justify-between">
+        <div class="ipl_element2">
           <!-- team 1 - left -->
-          <div class="flex flex-col gap-4 items-center">
+          <div class="ipl_element4">
             <!-- upper info -->
-            <div class="flex flex-row items-center gap-4">
+            <div class="ipl_element5">
               <!-- team name -->
-              <h2 class="text-sm text-center font-semibold">CSK</h2>
+              <h2 class="ipl_element7" id="team-1-code">😜</h2>
               <!-- team logo -->
-              <img
-                class="rounded-full border-2"
-                src="https://www.cricbuzz.com/a/img/v1/192x192/i1/c170661/chennai-super-kings-logo.png"
-                alt="logo"
-                width="50"
-                height="50"
-              />
+              <img id="team-1-logo" src="https://cdn3d.iconscout.com/3d/premium/thumb/cricket-ball-6242783-5107032.png?f=webp" alt="logo" width="50" height="50" />
               <!-- team score -->
-              <h1 class="text-2xl font-bold text-center text-red-500">144</h1>
+              <h1 id="team-1-score">😜</h1>
             </div>
             <!-- lower info -->
-            <div>
+            <div class="ipl_element6">
               <!-- team name -->
-              <h2 class="text-sm text-center text-gray-400">
-                Chennai Super Kings
-              </h2>
+              <h2 class="ipl_element8" id="team-1-name">😜</h2>
               <!-- wicket and overs info  -->
-              <h2 class="text-sm text-center">
+              <h2 class="ipl_element9">
                 <!-- overs span  -->
-                <span class="text-red-700 font-medium">Overs: </span>20
+                <span>Overs: </span> <span id="team-1-overs"></span>
                 <!-- wickets span  -->
-                <span class="text-red-700 font-medium">Wickets: </span>5
+                <span>Wickets: </span> <span id="team-1-wickets"></span>
               </h2>
             </div>
           </div>
-          <h3 class="text-gray-400">
-            vs
-          </h3>
+          <h3 class="ipl_element17">vs</h3>
           <!-- team 2 - right -->
-            <div class="flex flex-col gap-4 items-center">
-                <!-- upper info -->
-                <div class="flex flex-row items-center gap-4">
-                
-                 <!-- team score -->
-                 <h1 class="text-2xl font-bold text-center text-red-500">163</h1>
-                <!-- team logo -->
-                <img
-                    class="rounded-full border-2"
-                    src="https://www.cricbuzz.com/a/img/v1/192x192/i1/c170658/kolkata-knight-riders-logo.png"
-                    alt="logo"
-                    width="50"
-                    height="50"
-                />
-                <!-- team name -->
-                <h2 class="text-sm text-center font-semibold">KKR</h2>
-                </div>
-                <!-- lower info -->
-                <div>
-                <!-- team name -->
-                <h2 class="text-sm text-center text-gray-400">
-                    Kolkata Knight Riders
-                </h2>
-                <!-- wicket and overs info  -->
-                <h2 class="text-sm text-center">
-                    <!-- overs span  -->
-                    <span class="text-red-700 font-medium">Overs: </span>20
-                    <!-- wickets span  -->
-                    <span class="text-red-700 font-medium">Wickets: </span>5
-                </h2>
-                </div>
+          <div class="ipl_element10">
+            <!-- upper info -->
+            <div class="ipl_element11">
+              <!-- team score -->
+              <h1 id="team-2-score">😜</h1>
+              <!-- team logo -->
+              <img id="team-2-logo" src="https://cdn3d.iconscout.com/3d/premium/thumb/cricket-ball-6242783-5107032.png?f=webp" alt="logo" width="50" height="50" />
+              <!-- team name -->
+              <h2 class="ipl_element12" id="team-2-code">😜</h2>
+            </div>
+            <!-- lower info -->
+            <div class="ipl_element13">
+              <!-- team name -->
+              <h2 class="ipl_element14" id="team-2-name">😜</h2>
+              <!-- wicket and overs info  -->
+              <h2 class="ipl_element15">
+                <!-- overs span  -->
+                <span>Overs: </span> <span id="team-2-overs"></span>
+                <!-- wickets span  -->
+                <span>Wickets: </span> <span id="team-2-wickets"></span>
+              </h2>
+            </div>
+          </div>
         </div>
 
+        <!-- time and venue -->
+        <div class="ipl_element16">
+          <h3 class="ipl_element18" id="date">😜</h3>
+          <h3 class="ipl_element19" id="venue">😜</h3>  
+        </div>
+
+        <!-- status message -->
+        <div class="ipl_element20">
+          <h3 class="ipl_element21" id="status">😜</h3>
+          <!-- next button -->
+          <button class="ipl_element22" id="next">Next</button>
+        </div>
+        
+        
        
-      </div>
-
-      <!-- time and venue -->
-      <div class="flex flex-col w-full items-center">
-        <h3 class="text-gray-500">2023-05-14</h3>
-        <h3 class="text-gray-500">MA Chidambaram Stadium, Chennai</h3>
-
-      </div>
-
-      <!-- status message -->
-      <div class="flex w-full bg-red-100 rounded-full px-2 py-1 items-center">
-        <h3 class="text-red-700">Kolkata Knight Riders won by 19 runs</h3>
-      </div>
-
+      <script src="popup.js"></script>
     </div>
-<script src="popup.js"></script>
-
   </body>
 </html>
